@@ -1,8 +1,7 @@
-
-export default function Container({children} : {children: React.ReactNode}) {
+export default function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex flex-col items-center justify-center">
       {children}
     </div>
-  )
+  );
 }
