@@ -3,6 +3,7 @@ import { inter, soraSans } from "@/styles/fonts";
 import { Metadata } from "next";
 import { METADATA } from "@/constant/metadata";
 import { ThemeProviderContext } from "@/app/providers";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: `${METADATA.creator} | Personal Website`,
@@ -16,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProviderContext>
+      <body className={soraSans.className}>
+        <ThemeProviderContext> 
+          <Navbar/>
           {children}
         </ThemeProviderContext>
       </body>
