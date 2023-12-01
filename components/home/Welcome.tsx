@@ -1,8 +1,8 @@
 export default function Welcome() {
   return (
-    <div className='flex items-center bg-black rounded-full w-fit py-2 px-3 border border-neutral-500'>
-      <span className="bg-blue-600 w-3 h-3 rounded-full inline-block mr-2 animate-pulse"></span>
-      <h5 className='text-sm'>Hi, Welcome!</h5>
+    <div className="mt-16 flex w-fit items-center rounded-full border border-neutral-600 bg-neutral-950 px-3 py-2">
+      <span className="mr-2 inline-block h-3 w-3 rounded-full bg-blue-600"></span>
+      <h5 className="text-sm text-neutral-50">Hi, Welcome!</h5>
     </div>
   );
 }
