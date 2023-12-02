@@ -4,7 +4,7 @@ export default function PageContainer({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex h-screen flex-col items-center justify-center">
+    <section className="flex w-full min-h-screen flex-col items-center justify-center">
       {children}
     </section>
   );
