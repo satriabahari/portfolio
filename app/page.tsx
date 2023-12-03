@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Home from "@/components/home";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
@@ -9,9 +10,10 @@ export default function HomePage() {
     <main>
       <Container>
         <Home />
-        <About/>
-        <Skills/>
-        <Projects/>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
       </Container>
     </main>
   );

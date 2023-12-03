@@ -1,14 +1,16 @@
-import { SKILLS } from "@/constant/skills";
 import React from "react";
 import SkillCard from "./SkillCard";
 import MarqueeElement from "./MarqueeElement";
+import { STACKS } from "@/constant/stacks";
 
 export default function SkillList() {
+  const stacksInArray: Array<[string, JSX.Element]> = Object.entries(STACKS)
+  // .sort(() => Math.random() - 0.5);
   return (
-    <div className="flex w-full overflow-x-hidden gap-x-8 bg-neutral-950 py-5 border-t-2 border-b-2 border-neutral-500 mb-32 mt-8">
+    <div className="mb-32 mt-8 flex w-full gap-x-8 overflow-x-hidden border-b-2 border-t-2 border-neutral-500 bg-neutral-950 py-5">
       <MarqueeElement>
-        {SKILLS.map((skill, index) => (
-          <SkillCard key={index} {...skill} />
+        {stacksInArray.map(([name, icon], index) => (
+          <SkillCard key={index} name={name} icon={icon} />
         ))}
       </MarqueeElement>
     </div>

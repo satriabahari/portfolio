@@ -8,7 +8,7 @@ export const PROJECTS: ProjectsProps[] = [
     image: "/project_1.png",
     link_demo: "",
     link_github: "",
-    stacks: ["Next.js", "TailwindCSS"],
+    stacks: ["Next.js", "TailwindCSS", "TypeSkcript"],
   },
   {
     id: 2,
