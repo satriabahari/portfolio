@@ -1,10 +1,18 @@
+type PageContainerProps = {
+  children: React.ReactNode;
+  sidePadding?: boolean;
+};
+
 export default function PageContainer({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+  sidePadding,
+}: PageContainerProps) {
   return (
-    <section className="flex w-full min-h-screen flex-col items-center justify-center">
+    <section
+      className={`flex min-h-screen w-full flex-col items-center justify-center ${
+        sidePadding ? "px-48" : ""
+      }`}
+    >
       {children}
     </section>
   );

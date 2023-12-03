@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import Footer from "@/components/Footer";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Home from "@/components/home";
@@ -14,6 +15,7 @@ export default function HomePage() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer/>
       </Container>
     </main>
   );

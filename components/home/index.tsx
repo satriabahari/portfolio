@@ -7,7 +7,7 @@ import PageContainer from "../PageContainer";
 
 export default function Home() {
   return (
-    <PageContainer>
+    <PageContainer sidePadding>
       <Welcome />
       <Profile source="/personal_1.jpg" size={80} />
       <Intro />

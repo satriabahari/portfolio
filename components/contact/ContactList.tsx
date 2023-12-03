@@ -5,19 +5,23 @@ import React from "react";
 
 export default function ContactList() {
   return (
-    <div>
+    <div className="space-y-6">
       {SOCIAL_MEDIA.map((media, index) => (
-        <Link
-          href={media.href}
+        <div
           key={index}
-          className={clsx(
-            "flex w-full items-center space-x-2 rounded-md px-4 py-2",
-            media.backgroundColor,
-          )}
+          className="rounded-lg border border-neutral-600 bg-neutral-900 p-1"
         >
-          {media.icon}
-          <h5>{media.title}</h5>
-        </Link>
+          <Link
+            href={media.href}
+            className={clsx(
+              "flex w-full items-center space-x-2 rounded-md px-4 py-2",
+              media.backgroundColor,
+            )}
+          >
+            {media.icon}
+            <h5>{media.title}</h5>
+          </Link>
+        </div>
       ))}
     </div>
   );

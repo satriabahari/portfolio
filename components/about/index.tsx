@@ -6,7 +6,7 @@ import PageContainer from "../PageContainer";
 
 export default function About() {
   return (
-    <PageContainer>
+    <PageContainer sidePadding>
       <PageHeading title={"About me"} />
       <Profile source="/personal.jpg" size={144} />
       <Summary />

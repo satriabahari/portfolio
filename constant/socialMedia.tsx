@@ -13,24 +13,24 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
     title: "Github",
     href: "https://github.com/satriabahari",
     icon: <GithubIcon size={iconSize} />,
-    backgroundColor: "bg-neutral-800",
+    backgroundColor: "bg-gradient-to-b from-neutral-800 to-neutral-900",
   },
   {
     title: "Instagram",
     href: "https://www.instagram.com/satriabaharii_/",
     icon: <InstagramIcon size={iconSize} />,
-    backgroundColor: "bg-fuchsia-500",
+    backgroundColor: "bg-violet-800",
   },
   {
     title: "Linkedin",
     href: "https://www.linkedin.com/in/satria-bahari/",
     icon: <LinkedinIcon size={iconSize} />,
-    backgroundColor: "bg-blue-600",
+    backgroundColor: "bg-gradient-to-b from-blue-600 to-neutral-900",
   },
   {
     title: "Tiktok",
     href: "https://www.tiktok.com/@satriaabaharii/",
     icon: <TiktokIcon size={iconSize} />,
-    backgroundColor: "bg-neutral-900",
+    backgroundColor: "bg-gradient-to-b from-neutral-700 to-neutral-900",
   },
 ];
