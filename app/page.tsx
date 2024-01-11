@@ -15,7 +15,7 @@ export default function HomePage() {
         <Skills />
         <Projects />
         <Contact />
-        <Footer/>
+        <Footer />
       </Container>
     </main>
   );

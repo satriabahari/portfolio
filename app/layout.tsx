@@ -1,9 +1,12 @@
 import "./globals.css";
-import { inter, soraSans } from "@/styles/fonts";
+import { soraSans } from "@/styles/fonts";
 import { Metadata } from "next";
 import { METADATA } from "@/constant/metadata";
 import { ThemeProviderContext } from "@/app/providers";
 import Navbar from "@/components/navbar";
+import { Provider } from "react-redux";
+import { makeStore } from "@/lib/store";
+import StoreProvider from "./storeProvider";
 
 export const metadata: Metadata = {
   title: `${METADATA.creator} | Personal Website`,
@@ -18,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={soraSans.className}>
-        <ThemeProviderContext> 
-          <Navbar/>
-          {children}
-        </ThemeProviderContext>
+        <StoreProvider>
+          <ThemeProviderContext>
+            <Navbar />
+            {children}
+          </ThemeProviderContext>
+        </StoreProvider>
       </body>
     </html>
   );
