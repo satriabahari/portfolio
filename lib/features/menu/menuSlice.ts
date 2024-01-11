@@ -1,3 +1,4 @@
+import { RootState } from "@/lib/store";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface MenuState {
@@ -21,3 +22,5 @@ export const menuSlice = createSlice({
 export const { setActiveSection } = menuSlice.actions;
 
 export default menuSlice.reducer
+
+export const selectedActiveSection = (state: RootState) => state.menu.activeSection

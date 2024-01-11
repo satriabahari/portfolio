@@ -2,10 +2,8 @@ import "./globals.css";
 import { soraSans } from "@/styles/fonts";
 import { Metadata } from "next";
 import { METADATA } from "@/constant/metadata";
-import { ThemeProviderContext } from "@/app/providers";
+import { ThemeProviderContext } from "@/app/themeProvider";
 import Navbar from "@/components/navbar";
-import { Provider } from "react-redux";
-import { makeStore } from "@/lib/store";
 import StoreProvider from "./storeProvider";
 
 export const metadata: Metadata = {
