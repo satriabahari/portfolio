@@ -7,7 +7,7 @@ import Breakline from "../Breakline";
 
 export default function Contact() {
   return (
-    <PageContainer sidePadding>
+    <PageContainer sidePadding sectionName="Contact">
       <PageHeading title="Contact" />
       <div className="flex gap-x-16 w-full justify-center">
         <ContactList />

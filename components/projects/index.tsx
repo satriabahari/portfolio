@@ -5,7 +5,7 @@ import PageContainer from "../PageContainer";
 
 export default function Projects() {
   return (
-    <PageContainer>
+    <PageContainer sectionName="Projects">
       <PageHeading title="Projects" />
       <ProjectList />
     </PageContainer>
