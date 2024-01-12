@@ -16,7 +16,7 @@ export default function PageContainer({
   sidePadding,
   sectionName,
 }: PageContainerProps) {
-  const { ref, inView } = useInView({ threshold: 0 });
+  const { ref, inView } = useInView({ threshold: 0.75 });
   const dispatch = useAppDispatch();
   useEffect(() => {
     if (inView) {

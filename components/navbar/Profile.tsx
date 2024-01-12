@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { BiFace } from "react-icons/bi";
 
 export default function Profile() {
   return (

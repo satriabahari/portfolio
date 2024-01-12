@@ -10,12 +10,12 @@ export const MENU_ITEMS: MenuItemProps[] = [
     href: "/#about",
   },
   {
-    title: "Skill",
-    href: "/#skill",
+    title: "Skills",
+    href: "/#skills",
   },
   {
-    title: "Project",
-    href: "/#project",
+    title: "Projects",
+    href: "/#projects",
   },
   {
     title: "Contact",
