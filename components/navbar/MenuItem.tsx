@@ -10,10 +10,6 @@ import { twMerge } from "tailwind-merge";
 export default function MenuItem({ title, href }: MenuItemProps) {
   const isActive = useAppSelector(selectedActiveSection);
 
-  useEffect(() => {
-    console.log(isActive);
-  }, [isActive]);
-
   return (
     <div>
       <Link
@@ -24,7 +20,7 @@ export default function MenuItem({ title, href }: MenuItemProps) {
             ? "text-neutral-200 "
             : null,
         )}
-      > 
+      >
         {title}
       </Link>
     </div>
