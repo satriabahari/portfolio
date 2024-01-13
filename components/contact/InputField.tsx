@@ -13,8 +13,9 @@ export default function InputField({
     <div>
       {isTextArea ? (
         <textarea
+          rows={5}
           placeholder={name}
-          className="w-full rounded-3xl bg-neutral-800 p-4 outline outline-neutral-700 focus:outline-neutral-500 focus:outline-2"
+          className="w-full rounded-3xl bg-neutral-800 p-4 outline outline-neutral-700 focus:outline-2 focus:outline-neutral-500"
         />
       ) : (
         <input
