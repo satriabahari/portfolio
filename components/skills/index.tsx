@@ -5,7 +5,7 @@ import PageContainer from '../PageContainer'
 
 export default function Skills() {
   return (
-    <PageContainer sectionName='Skills'>
+    <PageContainer sectionName='Skills' noHFull>
       <SkillList/>
     </PageContainer>
   )
