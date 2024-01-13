@@ -28,13 +28,4 @@ export const PROJECTS: ProjectsProps[] = [
     link_github: "",
     stacks: ["Next.js", "TailwindCSS"],
   },
-  {
-    id: 4,
-    title: "Website RPL",
-    description: "Rekayasa Perangkat Lunak",
-    image: "/project_1.png",
-    link_demo: "",
-    link_github: "",
-    stacks: ["Next.js", "TailwindCSS"],
-  },
 ];
