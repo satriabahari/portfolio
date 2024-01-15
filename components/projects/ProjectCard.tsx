@@ -9,9 +9,9 @@ export default function ProjectCard({
   stacks,
 }: ProjectsProps) {
   return (
-    <div className="rounded-lg border-2 border-neutral-500 bg-neutral-200 p-1 dark:border-neutral-700 dark:bg-neutral-900">
+    <div className="rounded-lg border-2 border-neutral-400 bg-neutral-200 p-1 dark:border-neutral-700 dark:bg-neutral-900">
       <div
-        className="h-full w-full overflow-hidden rounded-md bg-gradient-to-b from-neutral-500
+        className="h-full w-full overflow-hidden rounded-md bg-gradient-to-b from-neutral-400
       to-neutral-200 dark:from-neutral-800 dark:to-neutral-900"
       >
         <Image

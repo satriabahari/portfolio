@@ -101,7 +101,7 @@ const STACKS = [
 
 export default function SkillList() {
   return (
-    <div className="mb-32 mt-8 flex w-full gap-x-8 overflow-x-hidden border-b-2 border-t-2 py-5 bg-neutral-100 border-neutral-500 dark:border-neutral-400 dark:bg-neutral-950">
+    <div className="mb-32 mt-8 flex w-full gap-x-8 overflow-x-hidden border-b-2 border-t-2 py-5 bg-neutral-100 border-neutral-400 dark:border-neutral-700 dark:bg-neutral-950">
       <MarqueeElement>
         {STACKS.map((stack, index) => (
           <SkillCard key={index} {...stack} />
