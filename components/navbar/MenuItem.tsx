@@ -15,9 +15,9 @@ export default function MenuItem({ title, href }: MenuItemProps) {
       <Link
         href={href}
         className={twMerge(
-          "text-neutral-400 hover:text-neutral-100",
+          "text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100",
           isActive.toLowerCase() === title.toLowerCase()
-            ? "text-neutral-200 "
+            ? "text-neutral-900 dark:text-neutral-200 "
             : null,
         )}
       >

@@ -56,7 +56,7 @@ export default function ContactList() {
       {SOCIAL_MEDIA.map((media, index) => (
         <div
           key={index}
-          className="rounded-lg border border-neutral-600 bg-neutral-900 p-1"
+          className="rounded-lg border border-neutral-500 bg-neutral-200 p-1 dark:border-neutral-600 dark:bg-neutral-900"
         >
           <Link
             target="_blank"

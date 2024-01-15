@@ -1,9 +1,9 @@
-import React from 'react'
-import { MdOutlineKeyboardDoubleArrowDown as ArrowDownIcon} from "react-icons/md";
+import React from "react";
+import { MdOutlineKeyboardDoubleArrowDown as ArrowDownIcon } from "react-icons/md";
 export default function ScrollDown() {
   return (
-    <div className='text-neutral-500 mt-12 animate-bounce'>
-      <ArrowDownIcon size={35}/>
+    <div className="mt-12 animate-bounce text-neutral-600 dark:text-neutral-500">
+      <ArrowDownIcon size={35} />
     </div>
-  )
+  );
 }
