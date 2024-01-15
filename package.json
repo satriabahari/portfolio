@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
+    "@types/nodemailer": "^6.4.14",
     "clsx": "^2.1.0",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.16.5",
     "next": "14.0.3",
     "next-themes": "^0.2.1",
