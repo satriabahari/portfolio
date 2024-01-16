@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Summary() {
   return (
-    <div className="text-center px-32 text-neutral-900 dark:text-neutral-400 text-sm gap-y-8 flex flex-col leading-loose">
+    <div className="flex flex-col gap-y-8 text-center text-sm leading-loose text-neutral-900 lg:px-32 dark:text-neutral-400">
       <p>
         After graduating with a degree in Accounting, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned

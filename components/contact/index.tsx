@@ -7,11 +7,11 @@ import Breakline from "../Breakline";
 
 export default function Contact() {
   return (
-    <PageContainer sidePadding sectionName="Contact">
+    <PageContainer sidePadding noHFull sectionName="Contact" others="lg:h-screen mb-32 lg:mb-0">
       <PageHeading title="Contact" />
-      <div className="flex gap-x-16 w-full justify-center">
+      <div className="flex w-full flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-16">
         <ContactList />
-        <Breakline/>
+        <Breakline />
         <ContactForm />
       </div>
     </PageContainer>

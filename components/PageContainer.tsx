@@ -11,6 +11,7 @@ type PageContainerProps = {
   noHFull?: boolean;
   sectionName: string;
   threshold?: number;
+  others?: string;
 };
 
 export default function PageContainer({
@@ -19,6 +20,7 @@ export default function PageContainer({
   sectionName,
   noHFull,
   threshold = 0.75,
+  others,
 }: PageContainerProps) {
   const { ref, inView } = useInView({ threshold });
   const dispatch = useAppDispatch();
@@ -30,8 +32,8 @@ export default function PageContainer({
   return (
     <section
       ref={ref}
-      className={`flex w-full flex-col items-center justify-center ${
-        sidePadding ? "px-48" : ""
+      className={`flex w-full flex-col items-center justify-center ${others} ${
+        sidePadding ? "px-8 lg:px-48" : ""
       } ${noHFull ? "" : "h-screen"}`}
     >
       {children}
