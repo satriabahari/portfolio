@@ -8,7 +8,7 @@ type MenuProps = {
 
 export default function Menu({ list }: MenuProps) {
   return (
-    <div className="flex gap-x-8">
+    <div className="hidden lg:flex gap-x-8">
       {list.map((item: MenuItemProps, index: number) => (
         <MenuItem key={index} {...item} />
       ))}
