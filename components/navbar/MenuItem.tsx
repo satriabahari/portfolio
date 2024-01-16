@@ -4,7 +4,6 @@ import { selectedActiveSection } from "@/lib/features/menu/menuSlice";
 import { useAppSelector } from "@/lib/hooks";
 import { MenuItemProps } from "@/types/menu";
 import Link from "next/link";
-import { useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function MenuItem({ title, href }: MenuItemProps) {
@@ -15,9 +14,9 @@ export default function MenuItem({ title, href }: MenuItemProps) {
       <Link
         href={href}
         className={twMerge(
-          "text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100",
+          "text-xl text-neutral-500 hover:text-neutral-900 lg:text-base dark:text-neutral-400 dark:hover:text-neutral-100",
           isActive.toLowerCase() === title.toLowerCase()
-            ? "text-neutral-900 dark:text-neutral-200 "
+            ? "lg:text-neutral-900 lg:dark:text-neutral-200 "
             : null,
         )}
       >
