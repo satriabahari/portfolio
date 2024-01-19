@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
 type ChildrenProps = {
@@ -21,9 +23,14 @@ const ModalOverlay = ({ children }: ChildrenProps) => {
   );
 };
 
-const modalRoot = document.getElementById("modal-root");
-
 const Modal = ({ children }: ChildrenProps) => {
+  const [modalRoot, setModalRoot] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      const modalRoot = document.getElementById("modal-root");
+      setModalRoot(modalRoot);
+    }
+  }, []);
   return (
     <>
       {modalRoot ? (
