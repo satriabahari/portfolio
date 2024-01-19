@@ -3,22 +3,22 @@ import { MenuItemProps } from "@/types/menu";
 export const MENU_ITEMS: MenuItemProps[] = [
   {
     title: "Home",
-    href: "/",
+    href: "/#Home",
   },
   {
     title: "About",
-    href: "/#about",
+    href: "/#About",
   },
   {
     title: "Skills",
-    href: "/#skills",
+    href: "/#Skills",
   },
   {
     title: "Projects",
-    href: "/#projects",
+    href: "/#Projects",
   },
   {
     title: "Contact",
-    href: "/#contact",
+    href: "/#Contact",
   },
 ];
