@@ -5,7 +5,7 @@ import PageContainer from "../PageContainer";
 
 export default function Projects() {
   return (
-    <PageContainer sectionName="Projects" threshold={0.5} noHFull others="mb-32 lg:mb-0">
+    <PageContainer sectionName="Projects" threshold={0.9} noHFull others="mb-32 lg:mb-0 scroll-mt-32">
       <PageHeading title="Projects" />
       <ProjectList />
     </PageContainer>
