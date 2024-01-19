@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={soraSans.className}>
+      <body className={soraSans.className} suppressHydrationWarning={true}>
         <StoreProvider>
           <ThemeProviderContext>
             <Navbar />
