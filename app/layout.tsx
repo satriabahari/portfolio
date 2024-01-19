@@ -23,6 +23,7 @@ export default function RootLayout({
           <ThemeProviderContext>
             <Navbar />
             {children}
+            <div id="modal-root"></div>
           </ThemeProviderContext>
         </StoreProvider>
       </body>
