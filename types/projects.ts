@@ -5,5 +5,5 @@ export type ProjectsProps = {
   image: string,
   link_demo?: string | null,
   link_github?: string | null,
-  stacks: string[],
+  stacks: JSX.Element[],
 }
