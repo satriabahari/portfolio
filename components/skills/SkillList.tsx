@@ -5,7 +5,6 @@ import { BsFillBootstrapFill } from "react-icons/bs";
 import {
   SiCss3,
   SiExpress,
-  SiFramer,
   SiGithub,
   SiHtml5,
   SiJavascript,
@@ -21,6 +20,7 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 const iconSize = "100%";
 
@@ -79,7 +79,7 @@ const STACKS = [
   },
   {
     title: "Framer Motion",
-    icon: <SiFramer size={iconSize} />,
+    icon: <TbBrandFramerMotion size={iconSize} className="text-violet-500" />,
   },
   {
     title: "MySQL",
@@ -101,7 +101,7 @@ const STACKS = [
 
 export default function SkillList() {
   return (
-    <div className="mb-32 mt-8 flex w-full gap-x-8 overflow-x-hidden border-b-2 border-t-2 py-5 bg-neutral-100 border-neutral-400 dark:border-neutral-700 dark:bg-neutral-950">
+    <div className="mb-32 mt-8 flex w-full gap-x-8 overflow-x-hidden border-b-2 border-t-2 border-neutral-400 bg-neutral-100 py-5 dark:border-neutral-700 dark:bg-neutral-950">
       <MarqueeElement>
         {STACKS.map((stack, index) => (
           <SkillCard key={index} {...stack} />
