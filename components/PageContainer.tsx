@@ -31,6 +31,7 @@ export default function PageContainer({
   }, [dispatch, inView, sectionName]);
   return (
     <section
+      id={sectionName}
       ref={ref}
       className={`flex w-full flex-col items-center justify-center ${others} ${
         sidePadding ? "px-8 lg:px-48" : ""
