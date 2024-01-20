@@ -2,22 +2,33 @@ import React from "react";
 
 export default function Summary() {
   return (
-    <div className="flex flex-col gap-y-8 text-center text-sm leading-loose text-neutral-900 lg:px-32 dark:text-neutral-400">
+    <div className="flex flex-col gap-y-8 text-center text-sm leading-loose text-neutral-900 lg:px-28 dark:text-neutral-400">
       <p>
-        After graduating with a degree in Accounting, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned
-        full-stack web development. My favorite part of programming is the
-        problem-solving aspect. I love the feeling of finally figuring out a
-        solution to a problem. My core stack is React, Next.js, Node.js, and
-        MongoDB. I am also familiar with TypeScript and Prisma. I am always
-        looking to learn new technologies. I am currently looking for a
-        full-time position as a software developer.
+        Hello there! Thank you for visiting my personal website. I&apos;m Satria
+        Bahari, a student majoring in Information Systems at the University of
+        Jambi. I have a strong interest in frontend development. With a solid
+        foundation in JavaScript and TypeScript, as well as a comprehensive
+        understanding of various frontend libraries and frameworks, I have
+        navigated the ever-evolving landscape of web development with enthusiasm
+        and dedication.
       </p>
       <p>
-        When I&apos;m not coding, I enjoy playing video games, watching movies,
-        and playing with my dog. I also enjoy learning new things. I am
-        currently learning about history and philosophy. I&apos;m also learning
-        how to play the guitar
+        I focus on creating web applications that not only provide precise
+        experiences but are also user-friendly. My specialization includes
+        JavaScript and TypeScript, along with frameworks such as React, Vite,
+        and Next.js. As a quick learner and adaptive thinker, I thrive in a
+        dynamic environment where innovation is a driving force. My
+        collaborative nature allows me to seamlessly integrate with teams,
+        contributing not only to my technical skills but also embodying a humble
+        attitude that values input from every team member.
+      </p>
+      <p>
+        I strongly believe that effective communication is crucial for success
+        in any role. I am adaptable, think efficiently, and always strive for
+        the best. My experiences have equipped me with analytical skills and
+        strong leadership abilities. I am comfortable working collaboratively in
+        a team and am excited about the opportunity to contribute to team
+        success. Looking forward to the possibility of collaboration!
       </p>
     </div>
   );
